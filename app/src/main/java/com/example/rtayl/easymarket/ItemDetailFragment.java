@@ -63,6 +63,7 @@ public class ItemDetailFragment extends Fragment {
         if (mItem != null) {
             ((ImageView) rootView.findViewById(R.id.item_image)).setImageResource(mItem.image);
             ((TextView) rootView.findViewById(R.id.item_detail)).setText(mItem.name);
+            ((TextView) rootView.findViewById(R.id.item_detail2)).setText(mItem.version);
         }
 
         return rootView;

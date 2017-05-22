@@ -1,5 +1,7 @@
 package com.example.rtayl.easymarket;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -72,7 +74,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_buy) {
-
+            Intent intent = new Intent(this, ItemListActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_payment) {
 
         } else if (id == R.id.nav_settings) {
